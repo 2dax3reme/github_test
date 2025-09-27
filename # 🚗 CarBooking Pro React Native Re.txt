@@ -1,0 +1,11 @@
+1. Login Screen (Login.tsx)
+This is the entry point, titled "🚗 CarBooking Pro". The screen requires a Username input and a Password input. The user initiates the process with the "Sign In" Button. The application logic determines navigation based on the credentials: an admin (e.g., admin/admin123) is sent to the Add Car Screen, while a customer (e.g., customer/customer123) is sent to the Rent Car Screen.
+
+2. Add Car Screen (Admin Flow - AddCar.tsx)
+This screen is titled "Add New Car 🚗" and is used for fleet management. The main form includes three text inputs for specifying the Make, Model, and Cost per Day. The visual representation is chosen from a [GRID] of tappable car emojis. The primary action is the "Add Car to Fleet" Button, which executes the add function and clears the inputs upon success. The bottom of the screen provides transparency by showing a [GRID] of the Current Fleet of cars already available in the system.
+
+3. Rent Car Screen (Customer Flow - RentCar.tsx)
+The customer experience begins here, titled "Rent a Car 🏎️". The screen displays a List of Cars (available via a horizontal scroll and a main grid), each detailing the car's image, make/model, and cost per day. Customers select a car by tapping it. They then specify the rental duration using the Number of days input, which is conveniently controlled by + and - buttons. The screen provides a Price Preview showing the calculated total. Tapping the "Book Now" Button opens the Confirm Booking Modal. This modal summarizes the booking (Car, Days, Total) and requires the user to choose between the "Confirm Booking" Button (leading to the Confirmation screen) or the "Cancel" Button (to dismiss the modal).
+
+4. Confirmation Screen (Confirmation.tsx)
+This final screen is titled "Booking Confirmed! 🎉". It confirms the success of the transaction with a large ✅ Success Icon and animated elements. The screen displays the details of the booking, including the Car make model, the number of Days rented, and the Total Amount Due on pickup. To encourage repeat business, the screen features the "Book Another Car" Button, which navigates the customer back to the RentCar screen.

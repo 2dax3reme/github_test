@@ -1,0 +1,14 @@
+/CarBookingPro
+├── src/
+│   ├── context/
+│   │   └── UserContext.tsx  // Assumed file for state management
+│   ├── screens/
+│   │   ├── Login.tsx
+│   │   ├── AddCar.tsx
+│   │   ├── RentCar.tsx
+│   │   └── Confirmation.tsx
+│   └── types/
+│       └── ...
+└── App.tsx              // Root stack navigator setup
+└── package.json
+└── README.md
